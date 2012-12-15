@@ -4,7 +4,7 @@
 read -p "Enter the subdirectory where the Node.js application is located (if none, leave blank):" SUB_DIR
 BUILD_DIR="$1/$SUB_DIR"
 
-read HEY
+read -n HEY
 echo "HEY:$HEY.";
 
 a=0
