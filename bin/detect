@@ -4,12 +4,9 @@
 read -p "Enter the subdirectory where the Node.js application is located (if none, leave blank):" SUB_DIR
 BUILD_DIR="$1/$SUB_DIR"
 
-echo $1;
+read HEY
+echo "HEY:$HEY";
 
 a=0
-while read line
-do
-  a=$(($a+1));
-  echo $a;
-done < "$1/Procfile"
+read line
 echo "Final line count is: $a";
