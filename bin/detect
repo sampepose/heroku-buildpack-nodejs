@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-if [ -f $1/package.json ]; then
+echo -n "Enter the subdirectory where the Node.js application is located (if none, leave blank):"
+read -e SUB_DIR
+BUILD_DIR = "$1/$SUB_DIR"
+
+if [ -f BUILD_DIR/package.json ]; then
   echo "Node.js" && exit 0
 else
   echo "no" && exit 1
