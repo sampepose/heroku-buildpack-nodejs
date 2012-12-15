@@ -15,11 +15,7 @@ SCONS_VERSION="1.2.0"
 S3_BUCKET="heroku-buildpack-nodejs"
 
 # parse and derive params
-BUILD_DIR=$1
-read secondyn < /proc/${PPID}/fd/0
-
-echo $secondyn;
-
+BUILD_DIR="$1/server-node"
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
 
