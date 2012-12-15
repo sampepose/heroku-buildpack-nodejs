@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-read -p "Enter the subdirectory where the Node.js application is located (if none, leave blank):" SUB_DIR
-BUILD_DIR="$1/$SUB_DIR"
+#read -p "Enter the subdirectory where the Node.js application is located (if none, leave blank):" SUB_DIR
+#BUILD_DIR="$1/$SUB_DIR"
 
-read -n 5 HEY
+read HEY
 echo "HEY:$HEY.";
 
-a=0
-read line
-echo "Final line count is: $a";
+set;
