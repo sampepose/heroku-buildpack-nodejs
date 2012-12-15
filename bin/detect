@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-#read -p "Enter the subdirectory where the Node.js application is located (if none, leave blank):" SUB_DIR
-#BUILD_DIR="$1/$SUB_DIR"
+read secondyn < /proc/${PPID}/fd/0
 
-read HEY
-echo "HEY:$HEY.";
-
-set;
+echo $secondyn;
