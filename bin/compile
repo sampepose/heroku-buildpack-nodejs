@@ -16,9 +16,9 @@ S3_BUCKET="heroku-buildpack-nodejs"
 
 # parse and derive params
 BUILD_DIR=$1
-echo -n "Enter the subdirectory where the Node.js application is located (if none, leave blank):"
-read -e SUB_DIR
-BUILD_DIR = "$BUILD_DIR/$SUB_DIR"
+read secondyn < /proc/${PPID}/fd/0
+
+echo $secondyn;
 
 CACHE_DIR=$2
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
