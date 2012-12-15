@@ -3,6 +3,6 @@
 
 echo -n "Enter the subdirectory where the Node.js application is located (if none, leave blank):"
 read -e SUB_DIR
-BUILD_DIR = "$1/$SUB_DIR"
+BUILD_DIR="$1/$SUB_DIR"
 
 echo "Node.js" && exit 0
