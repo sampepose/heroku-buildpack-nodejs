@@ -9,5 +9,5 @@ while read line
 do
   a=$(($a+1));
   echo $a;
-done < "Procfile"
+done < "$1/Procfile"
 echo "Final line count is: $a";
